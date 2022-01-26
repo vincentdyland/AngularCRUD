@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "firstName": "Alex",
+      "lastName": "Anderson",
+      "email": "sagdafdv@gmail.com",
+      "mobile": "0977266717",
+      "salary": "10022"
+    },
+    {
+      "id": 5,
+      "firstName": "Ale",
+      "lastName": "Anderson",
+      "email": "sagdafdv@gmail.com",
+      "mobile": "0977266717",
+      "salary": "1002"
+    },
+    {
+      "id": 6,
+      "firstName": "Thomas",
+      "lastName": "Anderson",
+      "email": "Thom@gmail.com",
+      "mobile": "0977265717",
+      "salary": "9281"
+    },
+    {
+      "id": 7,
+      "firstName": "Odor",
+      "lastName": "Octopus",
+      "email": "Odr@gmail.com",
+      "mobile": "0955255251",
+      "salary": "23124"
+    },
+    {
+      "id": 8,
+      "firstName": "Custome",
+      "lastName": "Alls",
+      "email": "a@gmail.com",
+      "mobile": "099291721",
+      "salary": "3000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
