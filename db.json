@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "id": 3,
-      "firstName": "Alex",
-      "lastName": "Anderson",
-      "email": "sagdafdv@gmail.com",
-      "mobile": "0977266717",
-      "salary": "10022"
-    },
-    {
       "id": 5,
       "firstName": "Ale",
       "lastName": "Anderson",
@@ -39,6 +31,14 @@
       "email": "a@gmail.com",
       "mobile": "099291721",
       "salary": "3000"
+    },
+    {
+      "id": 9,
+      "firstName": "Ana",
+      "lastName": "Dyland",
+      "email": "an@gmail.com",
+      "mobile": "0999288721",
+      "salary": "4000"
     }
   ],
   "comments": [],

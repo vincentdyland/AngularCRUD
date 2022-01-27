@@ -84,9 +84,16 @@
               type="text"
               formControlName="firstName"
               class="form-control"
-              id="exampleInputEmail1"
               aria-describedby="emailHelp"
+              placeholder="first name"
+              [ngModel]=""
             />
+            <span
+              class="error"
+              *ngIf="firstName?.invalid && firstName?.touched"
+            >
+              Please input firstName</span
+            >
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
@@ -96,8 +103,11 @@
               type="text"
               formControlName="lastName"
               class="form-control"
-              id="exampleInputPassword1"
+              placeholder="last name"
             />
+            <span class="error" *ngIf="lastName?.invalid && lastName?.touched">
+              Please input lastName</span
+            >
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Email</label>
@@ -105,7 +115,7 @@
               type="email"
               formControlName="email"
               class="form-control"
-              id="exampleInputPassword1"
+              placeholder="email"
             />
             <span class="error" *ngIf="email?.invalid && email?.touched">
               Email is not invalid ex: A@gmail.com</span
@@ -119,7 +129,7 @@
               type="text"
               formControlName="mobile"
               class="form-control"
-              id="exampleInputPassword1"
+              placeholder="mobile"
             />
             <span class="error" *ngIf="mobile?.invalid && mobile?.touched">
               Mobile must be 10 number</span
@@ -131,7 +141,7 @@
               type="text"
               formControlName="salary"
               class="form-control"
-              id="exampleInputPassword1"
+              placeholder="salary"
             />
             <span class="error" *ngIf="salary?.invalid && salary?.touched">
               Salary must be number between 1000 to 9999</span
@@ -146,7 +156,7 @@
           class="btn btn-secondary"
           data-bs-dismiss="modal"
         >
-          Close
+          Cancel
         </button>
         <button
           type="button"

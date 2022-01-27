@@ -24,8 +24,8 @@ export class EmployeeDashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.formValue = new FormGroup({
-      firstName: new FormControl(''),
-      lastName: new FormControl(''),
+      firstName: new FormControl('', Validators.required),
+      lastName: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
       mobile: new FormControl('', [
         Validators.required,
@@ -38,6 +38,12 @@ export class EmployeeDashboardComponent implements OnInit {
     });
 
     this.getAllEmployee();
+  }
+  get firstName() {
+    return this.formValue.get('firstName');
+  }
+  get lastName() {
+    return this.formValue.get('lastName');
   }
   get email() {
     return this.formValue.get('email');
@@ -93,7 +99,7 @@ export class EmployeeDashboardComponent implements OnInit {
     this.showAdd = false;
     this.showUpdate = true;
     this.EmployeeModelObj.id = row.id;
-    
+
     this.formValue.controls['firstName'].setValue(row.firstName);
     this.formValue.controls['lastName'].setValue(row.lastName);
     this.formValue.controls['email'].setValue(row.email);
